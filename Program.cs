@@ -10,6 +10,8 @@ namespace FortuneTeller
     {
         static void Main(string[] args)
         {
+            //Part 1
+
             //introduction
             Console.WriteLine("Hello there!!! Thank you for using Mister Cleatus, the most inaccurate fortune\nteller the world has ever seen.");
             Console.WriteLine("\nTo begin, please enter your first name. Nicknames are okay.\n");  //asking for first name
@@ -30,10 +32,10 @@ namespace FortuneTeller
             string favoriteColor = Console.ReadLine();
 
             string favoriteColorCaps = favoriteColor.ToUpper();
-
+            
             if (favoriteColorCaps == "HELP") //In case help is required
             {
-                Console.WriteLine("\nRed\nOrange\nYellow\nGreen\nBlue\nIndigo\nViolet\n\nOut of those choices, which is your favorite?\n");
+                Console.WriteLine("\a\nRed\nOrange\nYellow\nGreen\nBlue\nIndigo\nViolet\n\nOut of those choices, which is your favorite?\n");
                 favoriteColor = Console.ReadLine();
             }
 
@@ -48,11 +50,59 @@ namespace FortuneTeller
             Console.ReadKey();
             Console.WriteLine("\nYou could at least get a drum roll going... Press any key again.\n");
             Console.ReadKey();
-            
+
             //All user input is complete. Now the juicy stuff
 
 
-            
+            //Part 2
+            //Setting all the variables
+
+
+            //defining the retirement years
+            if ((age % 2) == 1)
+            {
+                string retireYears = "13 years";
+            }
+            else
+            {
+                string retireYears = "52 years";
+            }
+
+
+            //defining the vacation Homes
+            string vacationHome;
+            if (numberOfSiblings == 0)
+            {
+                vacationHome = "Monte Carlo";
+            }
+            else if (numberOfSiblings == 1)
+            {
+                vacationHome = "Naples, Italy";
+            }
+            else if (numberOfSiblings == 2)
+            {
+                vacationHome = "Honolulu, Hawaii";
+            }
+            else if (numberOfSiblings == 3)
+            {
+                vacationHome = "upper peninsula of Michigan";
+            }
+            else if (numberOfSiblings >= 4)
+            {
+                vacationHome = "your backyard";
+            }                    
+            else
+            {
+                vacationHome = "a dumpster in Siberia (you filthy liar)";
+            }
+
+
+            //defining the transportation
+            string transport;
+            if (favoriteColorCaps == "RED")
+            {
+                transport = "Maserati";
+            }
         }
     }
 }
