@@ -233,7 +233,7 @@ namespace FortuneTeller
                                         }
 
 
-                                        //Finally the prediction
+                                        //Part 3: The output--->Finally the prediction
 
                                         Console.WriteLine("\n\n" + firstName + " " + lastName + " will retire in " + retireYears + " with $" + moneyInBank + " in the bank,\na vacation home in " + vacationHome + ", and " + transport + ".");
                                         Console.WriteLine("\n\nWell, I certainly hope you have a pleasant day.");
