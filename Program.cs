@@ -217,19 +217,19 @@ namespace FortuneTeller
 
                                         if (birthMonth >= 1 && birthMonth <= 4)
                                         {
-                                            moneyInBank = 3200000.98d;
+                                            moneyInBank = 3200000.98;
                                         }
                                         else if (birthMonth >= 5 && birthMonth <= 8)
                                         {
-                                            moneyInBank = 7777777.78d;
+                                            moneyInBank = 7777777.78;
                                         }
                                         else if (birthMonth >= 9 && birthMonth <= 12)
                                         {
-                                            moneyInBank = 5318008.01d;
+                                            moneyInBank = 5318008.01;
                                         }
                                         else
                                         {
-                                            moneyInBank = 0.00d;
+                                            moneyInBank = 0.00;
                                         }
 
 
